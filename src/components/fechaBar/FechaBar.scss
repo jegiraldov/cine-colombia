@@ -1,0 +1,76 @@
+.calendar-conteiner{
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-conteiner label{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: white;
+}
+
+#calendar {
+  color: white;
+  width: 120px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #00000000; /* transparent */
+  border-radius: 6px; /* border-m */
+  border-width: 1px;
+  border-color: #565d6dff; /* neutral-600 */
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+/* Personalizar la cabecera del calendario */
+.react-datepicker__header {
+  background-color: #1C508DFF;
+  color: #fff;
+}
+
+/* Estilos para los botones de cambio de mes */
+.react-datepicker__navigation {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* Personalizar los días del calendario */
+.react-datepicker__day {
+  color: #333;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.react-datepicker__day-name{
+  color: white;
+  background: none;
+ 
+}
+.react-datepicker__day-names{
+  background: none;
+}
+
+
+/* Estilos para los días seleccionados */
+.react-datepicker__day--selected {
+  background-color: #1C508DFF;
+  color: #fff;
+}
+
+.react-datepicker__current-month{
+  color: white;
+  background: none;
+}
+
+.react-datepicker__week{
+  background-color: white;
+}

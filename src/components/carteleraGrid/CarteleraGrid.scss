@@ -1,0 +1,10 @@
+.imagenes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    gap: 150px;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+  }
+

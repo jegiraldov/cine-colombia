@@ -1,0 +1,25 @@
+.cinemasBar-conteiner{
+    display: flex;
+    flex-direction: column;
+    & label{
+        font-size: 14px; 
+        line-height: 22px;
+        color: white;
+    }
+    
+}
+
+.cinemasbar{
+    color: white;
+    width: 120px; 
+    padding: 10px 20px;
+    font-size: 14px; 
+    background: #00000000; /* transparent */
+    border-radius: 6px; /* border-m */
+    border-width: 1px; 
+    border-color: #565D6DFF; /* neutral-600 */
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+
