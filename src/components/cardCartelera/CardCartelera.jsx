@@ -9,19 +9,19 @@ export function CardCartelera({movie}) {
   const imageUrl = `https://image.tmdb.org/t/p/original${movie.poster_path}`;
   return (
     <>
-      <div className="cardCartelera-conteiner">
+      <div className="cardCartelera">
         <li className="li-imagenes-cartelera">
           <img
             className="li-imagenes__img-desktop"
             src={imageUrl}
             alt={movie.title}
           />
-          <h2>{movie.title}</h2>
-          <section>
+          <div className="info-movie">
+            <h3>{movie.title}</h3>
             <p>Titulo en ingles: {movie.original_title}</p>
             <p>Estreno: {movie.release_date}</p>
             {/* <p>Genero: {movie.}</p> */}
-          </section>
+          </div>
         </li>
       </div>
     </>

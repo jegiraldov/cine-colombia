@@ -1,11 +1,14 @@
 import React from 'react'
 import CarteleraGrid from '../carteleraGrid/CarteleraGrid';
+import './Main.scss';
 
 function Main() {
   return (
     <>
-        <h1>En Cartelera</h1>
-        <CarteleraGrid/>
+        <div className='main'>
+          <h1>En Cartelera</h1>
+          <CarteleraGrid/>
+        </div>
     </>
   )
 }

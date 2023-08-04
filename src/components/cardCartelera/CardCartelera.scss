@@ -1,14 +1,25 @@
-.li-imagenes-cartelera img{
-    width: 200px;
-    height: auto;
-    gap: 80px;
+.cardCartelera{
+    width: 20%;
+    margin: 30px;
+
+    .li-imagenes-cartelera{
+        list-style: none;
+        width: 284px; 
+        font-family: Inter; 
+        font-size: 18px; 
+        line-height: 28px; 
+        color: #171A1FFF;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .info-movie{
+            padding: 10px;
+            h3{font-weight:500;}
+        }
+
+    }
 }
 
-.li-imagenes-cartelera{
-    list-style: none;
-    width: 284px; 
-    font-family: Inter; 
-    font-size: 18px; 
-    line-height: 28px; 
-    color: #171A1FFF;
-}
+
+

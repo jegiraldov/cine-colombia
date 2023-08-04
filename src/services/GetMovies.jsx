@@ -7,7 +7,6 @@ import axios from 'axios';
   export const fetchMovies = async () => {
 
     try{
-      // const API_KEY = "23a6afa0e771969ea423036782880665";
       const API_URL = `${API}movie/now_playing?api_key=${API_KEY}&language=es-MX`;
       const {data} = await axios.get(API_URL);
         //console.log(data)
@@ -20,12 +19,13 @@ import axios from 'axios';
   
   } 
 
-  export const fetchGenre = async () => {
+  export const fetchGenre = async (genreIds) => {
     try{
       const API_URL = `${API}genre/movie/list?api_key=${API_KEY}`;
       const {data} = await axios.get(API_URL);
-        //console.log(data)
-        return data
+
+      return data.genres.filter((genre) => genreIds.includes(genre.id));
+
     } catch (error) {
       console.log(error);
       return null;

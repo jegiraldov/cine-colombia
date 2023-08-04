@@ -15,9 +15,7 @@ function Home() {
           <Swiper />
         </div>
       </div>
-      <div className="main">
         <Main/>
-      </div>
     </>
   );
 }

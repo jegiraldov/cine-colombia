@@ -20,6 +20,12 @@
             h2, p{
                 color: white;
             }
+            .list-genre{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 12px;
+            }
         }        
     }
         
